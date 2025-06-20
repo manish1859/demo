@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume - Manish Singh Kushwah</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(to right, #74ebd5, #ACB6E5); padding: 40px;">
+
+  <div style="max-width: 750px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 0 25px rgba(0,0,0,0.1);">
+    
+    <h1 style="text-align: center; color: #2c3e50;">👨‍💻 <span id="typingText">Manish Singh Kushwah</span></h1>
+    <p style="text-align: center; color: #555; font-style: italic;">Frontend Developer | Passionate Learner | Creative Coder</p>
+
+    <hr style="margin: 20px 0; border: 1px solid #ddd;">
+
+    <h2 style="color: #2980b9;">📚 Education</h2>
+    <p><strong>12th Standard</strong> - Completed from <em>[Govt.Sardar Sen. Sec. School]</em>, [Rbsc Board]</p>
+
+    <h2 style="color: #2980b9;">🚀 Skills</h2>
+    <div id="skills">
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">Bootstrap</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Python</span>
+      <span class="badge">React</span>
+    </div>
+
+       <h2 style="color: #2980b9;">📄 Certificates</h2>
+    <ul>
+      <li>
+        <a href="https://www.hackerrank.com/certificates/iframe/a0f15cbbfc50" target="_blank" style="text-decoration: none; color: #27ae60; font-weight: bold;">
+          ✅ HackerRank CSS Certificate
+        </a>
+      </li>
+      <li>
+        <a href="https://www.hackerrank.com/certificates/iframe/0f3f6f9667f2" target="_blank" style="text-decoration: none; color: #27ae60; font-weight: bold;">
+          ✅ HackerRank JavaScript Certificate
+        </a>
+      </li>
+    </ul>
+
+    <h2 style="color: #2980b9;">🧠 About Me</h2>
+    <p>I love building modern, responsive websites. I'm always excited to learn new technologies and improve my skills to become a top-notch developer!</p>
+
+    <h2 style="color: #2980b9;">📞 Contact</h2>
+    <button onclick="showContact()" style="padding: 10px 20px; background: #27ae60; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">Click to Show Contact</button>
+    
+    <div id="contact" style="display: none; margin-top: 15px; font-size: 16px;">
+      <p><strong>Mobile:</strong> +91-9351236736</p>
+      <p><strong>Email:</strong> manishsinghkushwah612@gmail.com</p>
+    </div>
+
+    <hr style="margin-top: 30px; border: 1px solid #ddd;">
+    <p style="text-align: center; color: gray;">© 2025 Manish Singh Kushwah | Made with 💙</p>
+  </div>
+
+  <style>
+    .badge {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #3498db;
+      color: white;
+      border-radius: 25px;
+      margin: 5px;
+      font-weight: bold;
+      animation: popIn 0.5s ease forwards;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+
+  <script>
+    const text = "Manish Singh Kushwah";
+    let i = 0;
+    const speed = 100;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typingText").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    document.getElementById("typingText").innerHTML = "";
+    typeWriter();
+
+    function showContact() {
+      document.getElementById("contact").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
